@@ -5,22 +5,11 @@ const Demo2 = () => {
   let x = 0;
 
   const ref = useRef(0);
-  /** not like => ref = 0
-   * ref = { current: 0 }
-   *
-   *
-   * */
-
-  console.log("Rendering....");
 
   const i = useRef(null);
-  // let i = {
-  //   current: null,
-  // };
   useEffect(() => {
     if (i.current) return;
     i.current = setInterval(() => {
-      //console.log("Namaste React", Math.random());
     }, 1000);
   }, []);
 
